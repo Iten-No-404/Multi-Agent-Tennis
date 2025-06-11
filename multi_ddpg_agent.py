@@ -10,7 +10,7 @@ import torch.optim as optim
 from ddpg_agent import OUNoise
 from model import Actor, Critic
 
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 class MultiAgent:
     def __init__(self, state_size, action_size, num_agents, random_seed, buffer_size=int(1e6), batch_size=128, gamma=0.99, tau=1e-3, lr_actor=1e-4, lr_critic=1e-3):
