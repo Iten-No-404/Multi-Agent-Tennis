@@ -65,7 +65,7 @@ The repository is structured as follows:
 - [Tennis.ipynb](./Tennis.ipynb) contains the training loop and the 3 DDPG hyperparameter attempts, and a simple loop to test the trained models and measure their mean scores over 100 episodes.
 - [Play_Best_Model.ipynb](./Play_Best_Model.ipynb) contains a simple loop to run the best model on the environment to view its performance.
 - [Report.pdf](./Report.pdf) describes the used learning algorithm, the best hyperparameters, results and future work.
-- [The ddpg_trials](.ddpg_trials) directory includes the results of all 17 training trials. Each subfolder indicates a trial and contain the following:
+- [The ddpg_trials](.ddpg_trials) directory includes the results of all 3 training trials. Each subfolder indicates a trial and contain the following:
   - [critic.pth](./ddpg_trials/3/critic.pth) which are the saved weights of the Critic model after training.
   - [0_actor.pth](./ddpg_trials/3/0_actor.pth) which are the saved weights of the first Actor model after training.
   - [1_actor.pth](./ddpg_trials/3/1_actor.pth) which are the saved weights of the second Actor model after training.
